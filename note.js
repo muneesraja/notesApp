@@ -67,7 +67,6 @@ const writeNewNote = (noteToadd) => {
     const parsedFile = JSON.stringify(noteToadd)
     fs.writeFileSync("note.json", parsedFile)
 }
-
 module.exports = {
     add:addNote,
     remove:removeNote,
